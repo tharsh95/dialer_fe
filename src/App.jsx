@@ -12,7 +12,7 @@ import useFetchData from "./hooks/useFetchData.js";
 const App = () => {
   const [selectedButton, setSelectedButton] = useState(1);
   const [data]= useFetchData();
-  
+
   const handleSelectedButton = (type) => {
     setSelectedButton(type);
   };

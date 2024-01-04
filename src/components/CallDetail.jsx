@@ -40,27 +40,27 @@ const CallDetail = ({ setInfo, callDetail }) => {
         <div
           className="calldetaildesc"
         >
-         <span>Type</span> {capitalizeFirstLetter(callDetail.direction)}
+         <strong>Type</strong> {capitalizeFirstLetter(callDetail.direction)}
         </div>
         <div
           className="calldetaildesc"
         >
-         <span>To</span> {callDetail.to}
+         <strong>To</strong> {callDetail.to}
         </div>
         <div
         className="calldetaildesc"
         >
-          <span>From</span>{callDetail.from}
+          <strong>From</strong>{callDetail.from}
         </div>
         <div
         className="calldetaildesc"
         >
-          <span>Via</span>{callDetail.via}
+          <strong>Via</strong>{callDetail.via}
         </div>
         <div
         className="calldetaildesc"
         >
-          <span>Archived</span>{callDetail.is_archived?"True":"False"}
+          <strong>Archived</strong>{callDetail.is_archived?"True":"False"}
         </div>
         <div
          className="calldetaildesc"
@@ -79,7 +79,7 @@ const CallDetail = ({ setInfo, callDetail }) => {
           </Tooltip>
           {moment(callDetail.created_at).format("llll")}
         </div>
-        <div className="calldetaildesc"><span>Status</span>{capitalizeFirstLetter(callDetail.call_type)}</div>
+        <div className="calldetaildesc"><strong>Status</strong>{capitalizeFirstLetter(callDetail.call_type)}</div>
       </div>
     </div>
   );
