@@ -19,7 +19,7 @@ const useFetchData = () => {
     fetchData();
   }, []);
 
-  return [data];
+  return [data,setData];
 };
 
 export default useFetchData;

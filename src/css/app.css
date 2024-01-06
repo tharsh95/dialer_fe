@@ -25,26 +25,26 @@
   align-items: center;
 }
 
-.container-view>div>button{
-  background-color: #2AC420;
+.container-view > div > button {
+  background-color: #2ac420;
   border-radius: 10px;
   width: 8rem;
   height: 2rem;
-  border:none
+  border: none;
 }
 #app .button {
   display: flex;
   justify-content: space-around;
 }
-.button>button {
+.button > button {
   background-color: #fff;
   border: none;
 }
 button:hover {
   cursor: pointer;
 }
-.button>  .selected {
-  border-bottom: 2px solid #2AC420;
+.button > .selected {
+  border-bottom: 2px solid #2ac420;
   transition: 200ms ease-in-out;
 }
 .card {
@@ -73,13 +73,13 @@ button:hover {
   justify-content: space-between;
   width: 90%;
 }
-.footeritem{
+.footeritem {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 50px;
 }
-.footeritem>li{
+.footeritem > li {
   list-style-type: none;
 }
 .calldetailcontainer {
@@ -90,38 +90,39 @@ button:hover {
 
 .left {
   flex: 1;
-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .center {
   flex: 2;
   display: flex;
   font-weight: 600;
-  font-size:  1rem;
+  font-size: 1rem;
   /* justify-content: flex-start; */
   align-items: center;
 }
-.nologs{
+.nologs {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   height: 300px;
 }
-.calldetailitem{
+.calldetailitem {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 20rem;
 }
-.carditem{
-  border-bottom: 1px solid black;
-   margin: 10px;
-    display:flex;
+.carditem {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin: 7px;
 }
-.carditem2{
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   width: 100%;
+.carditem2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
 }

@@ -10,10 +10,9 @@ import { HiPhoneIncoming, HiPhoneOutgoing } from "react-icons/hi";
 import axios from "axios";
 import { formatTime } from "../utils.js";
 
-const Card = ({ data, archive }) => {
+const Card = ({ data, archive, setData }) => {
   const [info, setInfo] = useState(true);
   const [callDetail, setCallDetail] = useState({});
-
   const handleInfo = (el) => {
     setCallDetail(el);
     setInfo(false);
@@ -35,6 +34,9 @@ const Card = ({ data, archive }) => {
 
     try {
       await axios.request(config);
+      setTimeout(() => {
+        setData((prevData) => prevData.filter((card) => card.id !== detail.id));
+      }, 0);
     } catch (e) {
       console.log(e);
     }
